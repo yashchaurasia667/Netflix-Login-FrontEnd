@@ -1,0 +1,43 @@
+.faq {
+    list-style-type: none;
+}
+
+.faq li {
+    margin-bottom: 5px;
+}
+
+.collapsible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: large;
+}
+  
+.collapsible:hover {
+    background-color: #4e4e4e;
+}
+
+.collapsible::after {
+    content: url("../Images/plus_icon.svg");
+    scale: 0.8;
+}
+
+
+
+.content {
+    margin-top: 2px;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    color: white;
+    background-color: #2d2d2d;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
