@@ -9,95 +9,6 @@ body {
     overflow-x: hidden;
 }
 
-#home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;   
-    position: relative;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.509);
-    color: white;
-}
-
-#backgound {
-    position: absolute;
-    zoom: 95%;
-    top: -290px;
-    left: -200px;
-    z-index: -1;
-}
-
-#navbar {
-    display: flex;
-    flex-direction: row;
-    height: 86px;
-    position: absolute;
-    top: 0px;
-    z-index: 2;
-}
-
-#logo {
-    height: 80px;
-    position: relative;
-    top: -5px;
-    left: 150px;
-}
-
-#lang {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0.2px solid grey;
-    height: 20px;
-    border-radius: 4px;
-    position: relative;
-    left: 900px;
-    padding: 5px 10px;
-    background-color: rgba(0, 0, 0, 0.411);
-    margin: auto;
-}
-
-#selector {
-    color: white;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.411);
-    border: none;
-    font-size: 15px;
-}
-
-#globe {
-    color: white;
-    background-color: transparent   ;
-}
-
-#signin {
-    margin: auto;
-    margin-left: 20px;
-    font-size: 14px;
-    font-weight: 600;
-    background-color: #e50914;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 14px;
-    position: relative;
-    cursor: pointer;
-    left: 900px;
-}
-
-#signin:hover {
-    background-color: #c11119;
-}
-
-#getstarted {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    top: 30px;
-}
 
 .heading, .subheading, .text{
     font-weight: 900;
@@ -118,38 +29,115 @@ body {
     margin-top: 25px;
 }
 
-#text_button {
-    margin-top: 16px;
+/* ---------------------------------------------------------------------------------------------------- */
+/*                                  Universal styling Ends Here                                                 */
+/* ---------------------------------------------------------------------------------------------------- */
+
+#sec {
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
     position: relative;
-    left: 490px;
 }
 
-#email {
-    background-color: rgba(0, 0, 0, 0.61);
-    padding: 20px 15px;
-    border: .2px solid rgba(168, 168, 168, 0.678);
+#outer {
+    height: 86px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 86px;
+    margin: 0px auto;
+}
+
+#logo {
+    height: 100%;
+}
+
+#right {
+    display: flex;
+    align-items: center;
+}
+
+#lang {
+    color: #e4e4e4;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid grey;
+    padding: 5px 10px;
     border-radius: 4px;
-    margin-top: 20px;
-    font-size: 15px;
-    font-weight: 550;
-    width: 23%;
-    position: relative;
+    margin-right: 20px;
 }
 
-#getstarted_button {
+#lang select {
+    background: transparent;
+    color: #e4e4e4;
+    border: none;
+    font-size: 16px;
+}
+
+#sign-in, #hero button {
+    padding: 8px 15px;
+    font-size: 14px;
+    position: relative;
+    top: 5px;
     background-color: #e50914;
     border: none;
+    color: #e4e4e4;
+    font-weight: 550;
     border-radius: 4px;
-    padding: 15px 25px;
-    color: #e8e6e3;
-    font-size: 25px;
-    font-weight: 525;
-    margin-left: 5px;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 
-#getstarted_button:hover {
+#sign-in:hover,#hero button:hover  {
     background-color: #c11119;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    height: 620px;
+    justify-content: center;
+}
+
+#credentials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#hero button {
+    font-size: 20px;
+    padding: 15px 25px;
+    margin-left: 10px;
+}
+
+#email {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 15px;
+    width: 20%;
+    font-size: 16px;
+}
+
+#img {
+    height: 700px;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+#background {
+    z-index: -1;
+    position: absolute;
+    /* scale: 1.2; */
+    width: 120%;
 }
 
 /* ---------------------------------------------------------------------------------------------------- */
@@ -168,10 +156,15 @@ body {
     width: 100vw;
 }
 
+.img-vid {
+    display: inline-block;
+    position: relative;
+}
+
 #tv_video {
     position: absolute;
-    top: 145px;
-    right: 230px;
+    top: 100px;
+    left: 85px;
 }
 
 #tv {
@@ -194,8 +187,8 @@ body {
     width: 317px;
     height: 78px;
     position: absolute;
-    left: 315px;
-    bottom: 100px;
+    bottom: 30px;
+    left: 150px;
 }
 
 #panel_text, #downloading{
@@ -234,8 +227,8 @@ body {
 #pile_in {
     width: 425px;
     position: absolute;
-    top: 100px;
-    right: 295px;
+    top: 50px;
+    left: 105px;
 }
 
 #pile_in_tv {
@@ -344,3 +337,6 @@ footer div {
     margin-bottom: 30px;
 }
 
+/*------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------Responsivenes---------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------*/
