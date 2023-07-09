@@ -78,7 +78,7 @@ body {
     font-size: 16px;
 }
 
-#sign-in, #hero button {
+#sign-in, #getstarted-button {
     padding: 8px 15px;
     font-size: 14px;
     position: relative;
@@ -92,7 +92,7 @@ body {
     cursor: pointer;
 }
 
-#sign-in:hover,#hero button:hover  {
+#sign-in:hover,#getstarted-button:hover  {
     background-color: #c11119;
 }
 
