@@ -9,29 +9,44 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <div id="navbar">
-        <img src="Images/Index/netflix_logo.png" id="logo">
-        <div id="lang">
-            <i class="fa-solid fa-globe" id="globe"></i>
-            <select name="lang" id="selector">
-                <option value="English"><p style="padding: 5px;">English</p></option>
-                <option value="Hindi"><p style="padding: 5px;">Hindi</p></option>
-            </select>
-        </div>
-        <button id="signin">Sign In</button>
-    </div>
-
-    <div id="home">
-        <div id="getstarted">
-            <h1 class="heading">Unlimited movies, TV shows and more</h1>
-            <p class="subheading">Watch anywhere. Cancel anytime.</p>
-            <p class="text">Ready to watch? Enter your email to create or restart your membership.</p>
-            <div id="text_button">
-                <input type="text" placeholder="Email address" id="email">
-                <button id="getstarted_button">Get Started <i class="fa-solid fa-chevron-right"></i></button>
+    <div id="sec">
+        <div id="outer">
+            <div id="navbar">
+                <img src="Images/Index/netflix_logo.png" alt="Netflix Logo" id="logo">
+                <div id="right">
+                    <div id="lang">
+                        <i class="fa-solid fa-globe"></i>
+                        <select name="language">
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                        </select>
+                    </div>
+                    <button id="sign-in">Sing In</button>
+                </div>
             </div>
         </div>
-        <img src="Images/Index/Background.jpg" id="backgound">
+    
+        <div id="hero">
+            <h1 class="heading">
+                Unlimited movies, TV shows and more
+            </h1>
+            <p class="subheading">
+                Watach anywhere. Cancel anytime.    
+            </p>
+            <h3 class="text">
+                Ready to watch? Enter your email to create or restart your membership.
+            </h3>
+            <div id="credentials">
+                <input type="email" placeholder="Email address" id="email">
+                <button>
+                    Get Started <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="img">
+            <img src="Images/Index/Background.jpg" id="background">
+        </div>
     </div>
 
     <div class="section">
@@ -40,7 +55,7 @@
         <p class="subheading" style="text-align: left;">Watch on smart TVs, PlayStation, Xbox, Chromecast,
             <br> Apple TV, Blu-ray players and more.</p>
         </div>
-        <div>
+        <div class="img-vid">
             <img src="Images/Index/tv.png" id="tv">
             <div>
                 <video autoplay playsinline muted loop id="tv_video">
@@ -51,7 +66,8 @@
     </div>
 
     <div class="section">
-        <img src="Images/Index/stranger_things_phone.jpg">
+        <div class="img-vid">
+            <img src="Images/Index/stranger_things_phone.jpg">
         <div id="download_panel">
             <img src="Images/Index/stranger_things_poster.png" id="poster">
             <div >
@@ -59,6 +75,7 @@
                 <p id="downloading">Downloading...</p>
             </div>
             <i class="fa-solid fa-arrow-down-long" id="donwload_icon"></i>
+        </div>
         </div>
         <div>
             <h1 class="heading " style="text-align: left;">Download your shows <br> to watch offline</h1>
@@ -71,11 +88,11 @@
             <h1 class="heading" style="text-align: left;">Watch everywhere</h1>
         <p class="subheading" style="text-align: left;">Stream unlimited movies and TV shows on your <br> phone, tablet, laptop, and TV.</p>
         </div>
-        <div>
-            <img src="../Images/Index/device-pile-in.png" id="pile_in_tv">
+        <div class="img-vid">
+            <img src="Images/Index/device-pile-in.png" id="pile_in_tv">
             <div>
                 <video autoplay playsinline muted loop id="pile_in">
-                    <source src="../Images/Index/video-devices-in.m4v">
+                    <source src="Images/Index/video-devices-in.m4v">
                 </video>
             </div>
         </div>
